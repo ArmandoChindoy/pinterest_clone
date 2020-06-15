@@ -1,0 +1,178 @@
+/* 
+   ____  ____    ____     
+U /"___|/ __"| u/ __"| u  
+\| | u <\___ \/<\___ \/   
+ | |/__ u___) | u___) |   
+  \____||____/>>|____/>>  
+ _// \\  )(  (__))(  (__) 
+(__)(__)(__)    (__)      
+*/
+
+:root {}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ---------------------------Header---------------------- */
+
+nav {}
+
+.nav_container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    list-style: none;
+    height: 50px;
+    background-color: white;
+    padding: 10px 0;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.nav_container li a {
+    text-decoration: none;
+}
+
+.item-nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-nav a {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.size-1 {
+    grid-column-end: span 1;
+}
+
+.size-3 {
+    grid-column-end: span 1;
+}
+
+.size-6 {
+    grid-column-end: span 12;
+}
+
+.logo_pinterest {
+    background-image: url("https://1000marcas.net/wp-content/uploads/2019/12/Pinterest-Logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.item-nav:nth-of-type(2) {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    min-width: 80px;
+    height: inherit;
+}
+
+.item-nav:nth-of-type(2) a {
+    color: white;
+}
+
+.item-nav:nth-of-type(5) {
+    justify-content: space-evenly;
+    border-radius: 30px;
+    background-color: #e1e1e1;
+    opacity: 0.7;
+    height: 100%;
+}
+
+.item-nav:nth-of-type(5) input {
+    height: 100%;
+    width: 95%;
+    border: none;
+    border-radius: inherit;
+    background-color: inherit;
+    font-weight: 600;
+}
+
+.item-nav:nth-of-type(5) i {
+    padding-left: 10px;
+}
+
+.item-nav:nth-of-type(5):hover {
+    opacity: 1;
+}
+
+.nav-icon a {
+    font-size: 20pt;
+    color: #767676;
+}
+
+.nav-icon a:hover .nav-icon {
+    box-shadow: 3px 3px 3px 3px #767676;
+    border-radius: 50px;
+    background-color: rgba(118, 118, 118, .3);
+}
+
+.item-nav:nth-of-type(8) {
+    background-image: url("../img/armando.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .item-nav:nth-of-type(3) {
+        display: none;
+    }
+    .item-nav:nth-of-type(4) {
+        display: none;
+    }
+    .size-6 {
+        grid-column-end: span 10;
+    }
+    .nav_container {
+        grid-gap: 10px;
+    }
+}
+
+
+/* ---------------------------Main------------------------ */
+
+.container_pins {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.item {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.level-1 {
+    grid-row-end: span 3;
+}
+
+.level-2 {
+    grid-row-end: span 1;
+}
+
+.level-3 {
+    grid-row-end: span 1;
+}
