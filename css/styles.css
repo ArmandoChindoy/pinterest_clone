@@ -22,7 +22,7 @@ U /"___|/ __"| u/ __"| u
 nav {}
 
 .nav_container {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     list-style: none;
